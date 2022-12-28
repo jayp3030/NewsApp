@@ -8,7 +8,7 @@ export class NewsItem extends Component {
     return (
       <div className='my-3'>
         <div className="card" style={{width: "18rem"}}>
-            <img src={imgUrl} className="card-img-top" alt="..."/>
+            <img src={imgUrl ? imgUrl:'https://cdn.zeebiz.com/sites/default/files/2022/12/27/218230-m1.jpg'} className="card-img-top" alt="..."/>
             <div className="card-body">
                 <h5 className="card-title">{title}...</h5>
                 <p className="card-text">{description}...</p>
