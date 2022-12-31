@@ -5,12 +5,15 @@ import Navbar from './components/Navbar';
 import News from './components/News';
 import { BrowserRouter , Route,Routes } from 'react-router-dom';
 
+
 export class App extends Component {
   render() {
     return (
       <>
       <BrowserRouter>
         <Navbar />
+
+        
         <Routes>
           <Route  exact path='/'  element={ <News key="general" pageSize={9} country='in' />}/>
           <Route  exact path='/buisness' element={ <News key="buisness" pageSize={9} country='in' category='buisness' />} />
